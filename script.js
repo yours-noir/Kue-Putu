@@ -1,5 +1,8 @@
-function playMusic() {
-  const lagu = document.getElementById("lagu");
-  lagu.volume = 0.8;
-  lagu.play();
+function start() {
+  document.body.classList.remove("not-loaded");
+  document.querySelector(".Kue putu").style.display = "none";
+
+  const music = document.getElementById("bg-music");
+  music.volume = 0.7;
+  music.play();
 }
